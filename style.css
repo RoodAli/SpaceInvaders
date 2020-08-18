@@ -19,6 +19,13 @@
     margin-left: 11px;
  }
 
+ p {
+    color: #f0e68c;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 13px;
+    margin-top: 155px;
+ }
+
  /*                class selector                */
 
  .restart {
