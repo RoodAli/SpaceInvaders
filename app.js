@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(invaderId)
     }
   }
-  invaderId = setInterval(moveInvaders, 500)
+  invaderId = setInterval(moveInvaders, 300)
 
   // shoot at aliens
   function shoot(e) {
