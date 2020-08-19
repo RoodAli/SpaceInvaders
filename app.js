@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let invaderId;
   //define the alien invaders
   const alienInvaders = [
-    0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 32, 34, 36, 38, 40
+    0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70
   ]
 
   // draw the alien invaders
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(invaderId)
     }
   }
-  invaderId = setInterval(moveInvaders, 300)
+  invaderId = setInterval(moveInvaders, 200)
 
   // shoot at aliens
   function shoot(e) {
