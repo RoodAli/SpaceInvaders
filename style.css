@@ -1,93 +1,95 @@
- /*             Tag Selector                 */
+* {
+   margin: 0;
+   padding: 0;
+}
 
- body {
-    background: url(Image/background.jpg)
- }
+body {
+   background: #cccccc
+}
 
- h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    color: #fff;
-    text-shadow: 0 0 30px #f0e68c;
-    font-family: 'Cantarell', sans-serif;
- }
+.contain {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
 
- span {
-    margin-left: 11px;
- }
+ul {
+   position: absolute;
+   transform: translate(-500, -500);
+   margin: 0;
+   padding: 0;
+}
 
- p {
-    color: #f0e68c;
-    font-family: 'Cantarell', sans-serif;
-    font-size: 13px;
-    margin-top: 154px;
- }
+ul li {
+   list-style: none;
 
- /*                class selector                */
+}
 
- .restart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45px;
- }
+/* ul li a {
+   font-size: 40px;
+   color: red;
+   transition: 0.5s;
+} */
 
- .gameContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ul li span {
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   top: 30px;
+   color: #fde346;
+   letter-spacing: 4px;
+   transition: 0.5s;
+}
 
- }
+ul li a {
+   text-decoration: none;
+   display: absolute;
+   display: block;
+   width: 210px;
+   height: 80px;
+   background: url(Image/panner.gif);
+   text-align: left;
+   padding-left: 20px;
+   transform: rotate(-30deg) skewX(25deg) translate(0, 0);
+   transition: 0.5s;
+   box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
 
- .grid {
-    background: url(Image/backgroundStar.gif);
-    display: flex;
-    flex-wrap: wrap;
-    border: solid #f0e68c 1px;
-    width: 300px;
-    height: 300px;
- }
+ul li a::before {
+   content: "";
+   position: absolute;
+   top: 10px;
+   left: -20px;
+   height: 100%;
+   width: 20px;
+   background: #3d3f70;
+   transform: 0.5s;
+   transform: rotate(0deg) skewY(-45deg);
+}
 
- .grid div {
-    width: 20px;
-    height: 20px;
- }
+ul li a::after {
+   content: "";
+   position: absolute;
+   bottom: -20px;
+   left: -10px;
+   height: 20px;
+   width: 100%;
+   background: #3d3f70;
+   transform: 0.5s;
+   transform: rotate(0deg) skewX(-45deg);
+}
 
- .shooter {
-    content: url(Image/Shooter.png);
- }
+ul li a:hover {
+   transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+   box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
 
- .invader {
-    content: url(Image/Alien.png);
- }
+ul li:hover span {
+   color: transparent
+}
 
- .boom {
-    height: 4px;
-    width: 4px;
-    content: url(Image/Boom.png);
- }
-
- .laser {
-    content: url(Image/Laser.png);
- }
-
- a {
-    padding: 15px 30px;
-    color: #f0e68c;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 18px;
-    overflow: hidden;
-    transition: 0.2s;
-    font-family: 'Cantarell', sans-serif;
- }
-
- a:hover {
-    color: #c47356;
-    background: #f0e68c;
-    box-shadow: 0 0 10px #f0e68c, 0 0 40px #f0e68c, 0 0 80px #f0e68c;
- }
+ul li:hover a {
+   background: url(Image/game.gif);
+}

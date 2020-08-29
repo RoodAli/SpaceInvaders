@@ -1,0 +1,93 @@
+ /*             Tag Selector                 */
+
+ body {
+    background: url(Image/background.jpg)
+ }
+
+ h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 0 30px #f0e68c;
+    font-family: 'Cantarell', sans-serif;
+ }
+
+
+ span {
+    margin-left: 11px;
+ }
+
+ p {
+    color: #f0e68c;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 13px;
+    margin-top: 154px;
+ }
+
+ /*                class selector                */
+
+ .restart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+ }
+
+ .gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .grid {
+    background: url(Image/backgroundStar.gif);
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #f0e68c 1px;
+    width: 300px;
+    height: 300px;
+ }
+
+ .grid div {
+    width: 20px;
+    height: 20px;
+ }
+
+ .shooter {
+    content: url(Image/Shooter.png);
+ }
+
+ .invader {
+    content: url(Image/Alien.png);
+ }
+
+ .boom {
+    height: 4px;
+    width: 4px;
+    content: url(Image/Boom.png);
+ }
+
+ .laser {
+    content: url(Image/Laser.png);
+ }
+
+ a {
+    padding: 15px 30px;
+    color: #f0e68c;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: 'Cantarell', sans-serif;
+ }
+
+ a:hover {
+    color: #c47356;
+    background: #f0e68c;
+    box-shadow: 0 0 10px #f0e68c, 0 0 40px #f0e68c, 0 0 80px #f0e68c;
+ }
